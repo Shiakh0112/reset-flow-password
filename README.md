@@ -2,6 +2,12 @@
 
 Complete authentication system with signup, login, profile, and password reset functionality. Built with React, Node.js, Express, MongoDB, and Brevo email service.
 
+**🔗 GitHub Repository:** [https://github.com/Shiakh0112/reset-flow-password](https://github.com/Shiakh0112/reset-flow-password)
+
+**🌐 Live Demo:**
+- **Frontend:** [https://reset-flow-password-brqy.vercel.app](https://reset-flow-password-brqy.vercel.app)
+- **Backend:** [https://reset-flow-password.onrender.com](https://reset-flow-password.onrender.com)
+
 ---
 
 ## 📋 Features
@@ -79,7 +85,17 @@ Each page has a unique gradient background:
 
 ### Installation
 
-#### 1️⃣ Clone & Install Dependencies
+#### 1️⃣ Clone Repository
+
+```bash
+# Clone the repository
+git clone https://github.com/Shiakh0112/reset-flow-password.git
+
+# Navigate to project directory
+cd reset-flow-password
+```
+
+#### 2️⃣ Install Dependencies
 
 ```bash
 # Backend
@@ -91,7 +107,7 @@ cd frontend
 npm install
 ```
 
-#### 2️⃣ Configure Environment Variables
+#### 3️⃣ Configure Environment Variables
 
 **Backend `.env` file:**
 
