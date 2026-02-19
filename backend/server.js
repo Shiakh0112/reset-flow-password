@@ -17,7 +17,18 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: ['https://reset-flow-password-brqy.vercel.app', 'http://localhost:5173'],
+  origin: function(origin, callback) {
+    const allowedOrigins = [
+      'https://reset-flow-password-brqy.vercel.app',
+      'http://localhost:5173'
+    ];
+    // Allow Vercel preview deployments
+    if (!origin || allowedOrigins.includes(origin) || origin.includes('vercel.app')) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
   credentials: true
 }));
 app.use(express.json());
